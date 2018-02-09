@@ -1,0 +1,22 @@
+{
+  "name": "psd-html",
+  "version": "1.0.0",
+  "description": "psd auto to html",
+  "main": "app.js",
+  "scripts": {
+    "dev": "node app.js feifan.psd",
+    "start": "npm run dev"
+  },
+  "keywords": [
+    "psd",
+    "html"
+  ],
+  "author": "guoyongwei",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "jquery": "^3.3.1",
+    "psd": "^3.2.0",
+    "rimraf": "^2.6.2"
+  }
+}
