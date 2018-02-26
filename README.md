@@ -9,19 +9,24 @@ Turn the PSD picture into a HTML page
 安装
 npm  install
 
-运行
+快速解析psd
 npm start
 npm run dev
 
-也可以
-node app.js xx.psd
+正确解析psd方式
+node app.js feifan.psd
 
+压缩png图片
+node imagemin.js feifanpsd
 
 export :        用来存放导出的html css image
 app.js  ：      主要执行文件
-。psd  ：       需要用到的图片
+imagemin.js     压缩图片的js
+.psd  ：       需要解析的图片
 
 json.txt:       psd图片的数据结构（非必要）
 output.png:     生成的png格式图片
 templete.html:  模板文件
+eslintrc.json   配置eslint
 package.json
+compression     提升性能使页面加载的文件变小加快请求，并不能压缩图片
