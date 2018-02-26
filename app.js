@@ -25,8 +25,8 @@ class exportPSD {
     constructor(){
         this.exportPath = "./export/";// 导出文件夹路径
         this.exportAppPath = "";// 导出的index.html根目录
-        this.saveImgPath = this.exportPath + "app/images/";// 图片的保存路径
-        this.saveCssPath = this.exportPath + "app/css/";// css保存路径
+        this.saveImgPath = "";// 图片的保存路径
+        this.saveCssPath = "";// css保存路径
         this.oldTime = new Date();// 当前时间
         this.pngId = 0;
         this.groupId = 0;// 类名
