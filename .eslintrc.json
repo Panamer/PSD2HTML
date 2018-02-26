@@ -1,0 +1,13 @@
+{
+  "parser": "esprima",
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "rules": {
+    "semi": [2, "always"]
+  }
+}

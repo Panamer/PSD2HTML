@@ -1,8 +1,12 @@
+var express = require('express');
 var path = require('path');
 var fs = require("fs");
 var PSD = require('psd');
 var cheerio = require('cheerio');
 var rimraf = require('rimraf');
+var compression = require('compression');
+var app = express();
+app.use(compression());
 
 var psd = null;
 var $ = null;
@@ -10,7 +14,7 @@ var $wrap = null;
 var content = null;
 
 
-// You can also use promises syntax for opening and parsing 
+// 把psd转换成png图片
 PSD.open("feifan.psd").then(function (psd) {
   return psd.image.saveAsPng('./output.png');
 }).then(function () {
@@ -45,7 +49,7 @@ class exportPSD {
             if (err) throw err;
              fs.mkdir(_self.exportPath + dir + "/", function(d){
                 _self.exportAppPath = _self.exportPath + dir + "/";
-                
+
                 fs.mkdir(_self.exportAppPath + "images", function(){
                     _self.saveImgPath = _self.exportAppPath + "images/";
                 });

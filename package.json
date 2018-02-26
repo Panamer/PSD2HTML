@@ -2,6 +2,7 @@
   "name": "psd-html",
   "version": "1.0.0",
   "description": "psd auto to html",
+  "repository": "https://github.com/Panamer/PSD2HTML.git",
   "main": "app.js",
   "scripts": {
     "dev": "node app.js feifan.psd",
@@ -15,6 +16,9 @@
   "license": "ISC",
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
+    "compression": "^1.7.2",
+    "eslint": "^4.18.1",
+    "express": "^4.16.2",
     "jquery": "^3.3.1",
     "psd": "^3.2.0",
     "rimraf": "^2.6.2"
