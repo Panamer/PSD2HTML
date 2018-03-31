@@ -3,7 +3,7 @@ Turn the PSD picture into a HTML page
 
 利用psd包把需要的psd格式图片解析，再通过psd提供的方法得到png图片和psd图片的数据结构（json）
 拿到png和json文件以后，进行处理生成html，并且以rem布局
-可以大量简化前端的工作流
+可以大量简化前端的工作量
 
 
 安装
