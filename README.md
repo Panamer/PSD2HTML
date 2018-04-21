@@ -30,3 +30,6 @@ templete.html:  模板文件
 eslintrc.json   配置eslint
 package.json
 compression     提升性能使页面加载的文件变小加快请求，并不能压缩图片
+
+
+¥{{li
